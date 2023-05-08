@@ -13,3 +13,17 @@ echo "$result" | grep pkexec || grep nmap || grep python
 }
 
 permisos_suid
+
+capabilities() {
+
+echo "Buscando binarios con capacidades..."
+echo "==================================="
+
+result=$(getcap -r / 2>/dev/null)
+
+echo "$result" | grep python || grep ruby 
+ 
+}
+
+capabilities
+
