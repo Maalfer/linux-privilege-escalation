@@ -2,7 +2,7 @@
 
 permisos_suid() {
     
-    echo -e "\nBuscando binarios con bit setuid..."
+    echo -e "\nBuscando binarios con bit SUID..."
     echo -e "=====================================\n"
 
     result=$(find / -perm -4000 2>/dev/null)
